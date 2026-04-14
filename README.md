@@ -100,3 +100,7 @@ cd frontend
 pnpm install
 pnpm test
 ```
+
+
+## Demo
+[demo](./videos/screen-capture.webm)
