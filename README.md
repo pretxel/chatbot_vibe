@@ -103,4 +103,4 @@ pnpm test
 
 
 ## Demo
-[demo](./videos/screen-capture.webm)
+[screen-capture.webm](https://github.com/user-attachments/assets/0b31acef-b348-4653-83aa-097c2c2c66b7)
