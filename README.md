@@ -21,14 +21,16 @@ The frontend connects **directly** to the FastAPI backend via SSE — there is n
 
 ## Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Frontend | Next.js 15, React 19, TypeScript |
-| UI | Tailwind CSS v4, Radix UI |
-| Backend | FastAPI, Python 3.11+, uvicorn |
-| Streaming | Server-Sent Events (SSE) |
+
+| Layer         | Technology                                                          |
+| ------------- | ------------------------------------------------------------------- |
+| Frontend      | Next.js 16, React 19, TypeScript                                    |
+| UI            | Tailwind CSS v4, Radix UI                                           |
+| Backend       | FastAPI, Python 3.11+, uvicorn                                      |
+| Streaming     | Server-Sent Events (SSE)                                            |
 | LLM providers | Google Gemini 2.5 Flash, Anthropic Claude (claude-sonnet-4-6), Mock |
-| Infra | Docker Compose |
+| Infra         | Docker Compose                                                      |
+
 
 ## Prerequisites
 
@@ -56,13 +58,15 @@ docker compose up --build
 
 ## Environment Variables
 
-| Variable | Required | Default | Description |
-|---|---|---|---|
-| `LLM_PROVIDER` | No | `gemini` | Provider to use: `mock`, `gemini`, or `claude` |
-| `GOOGLE_API_KEY` | If `gemini` | — | Google AI Studio API key |
-| `ANTHROPIC_API_KEY` | If `claude` | — | Anthropic API key |
-| `ANTHROPIC_MODEL` | No | `claude-sonnet-4-6` | Override the Anthropic model |
-| `ALLOWED_ORIGINS` | No | `http://localhost:3000` | Comma-separated CORS origins |
+
+| Variable            | Required    | Default                 | Description                                    |
+| ------------------- | ----------- | ----------------------- | ---------------------------------------------- |
+| `LLM_PROVIDER`      | No          | `gemini`                | Provider to use: `mock`, `gemini`, or `claude` |
+| `GOOGLE_API_KEY`    | If `gemini` | —                       | Google AI Studio API key                       |
+| `ANTHROPIC_API_KEY` | If `claude` | —                       | Anthropic API key                              |
+| `ANTHROPIC_MODEL`   | No          | `claude-sonnet-4-6`     | Override the Anthropic model                   |
+| `ALLOWED_ORIGINS`   | No          | `http://localhost:3000` | Comma-separated CORS origins                   |
+
 
 ## Local Development (without Docker)
 
@@ -101,6 +105,6 @@ pnpm install
 pnpm test
 ```
 
-
 ## Demo
+
 [screen-capture.webm](https://github.com/user-attachments/assets/0b31acef-b348-4653-83aa-097c2c2c66b7)
